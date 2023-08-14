@@ -2,16 +2,19 @@
 <html>
 <head>
     <title>Random Image Generator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Random Image Generator</h1>
-    <div class="slider-container">
-        <label for="image-width-slider">Image Width:</label>
-        <input type="range" id="image-width-slider" min="100" max="800" value="400">
+    <div class="container text-center mt-5"> 
+        <h1 class="mb-4">Random Background Generator</h1> 
+        <button id="generate-btn" class="btn btn-primary mb-3">Generate Background 🔥</button>
+        <div class="slider-container mb-3">
+            <label for="image-width-slider">Image Width:</label>
+            <input type="range" id="image-width-slider" min="100" max="1200" value="400">
+        </div>
+        <div id="image-container"></div>
     </div>
-    <button id="generate-btn">Generate Image</button>
-    <div id="image-container"></div>
     <script src="script.js"></script>
 </body>
 </html>
