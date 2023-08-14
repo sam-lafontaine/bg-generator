@@ -4,7 +4,10 @@ const imageWidthSlider = document.querySelector("#image-width-slider");
 
 imageWidthSlider.addEventListener("input", function() {
     const newWidth = this.value;
-    imageContainer.style.width = `${newWidth}px`;
+    const image = document.querySelector("#image-container img"); // select the image inside the container
+    if (image) {
+        image.style.width = `${newWidth}px`;
+    }
 });
 
 generateBtn.addEventListener("click", function() {
